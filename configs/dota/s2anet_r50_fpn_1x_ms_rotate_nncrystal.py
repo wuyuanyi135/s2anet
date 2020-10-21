@@ -21,7 +21,7 @@ model = dict(
         num_outs=5),
     rbox_head=dict(
         type='S2ANetHead',
-        num_classes=16,
+        num_classes=3,
         in_channels=256,
         feat_channels=256,
         stacked_convs=2,
@@ -80,11 +80,11 @@ test_cfg = dict(
     nms=dict(type='nms_rotated', iou_thr=0.1),
     max_per_img=2000)
 # dataset settings
-dataset_type = 'DotaOBBDataset'
-data_root = '/workfs/jmhan/dota_1024_ms/'
+dataset_type = 'DotaOBBNNCrystalDataset'
+data_root = '/home/wuyuanyi/nn/datasets/dota_split/'
 # data_root = 'data/dota_trainval/'
 img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+    mean=[170, 170, 170], std=[58, 58, 58], to_rgb=True)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
@@ -111,24 +111,26 @@ test_pipeline = [
             dict(type='Collect', keys=['img']),
         ])
 ]
+
 data = dict(
-    imgs_per_gpu=2,
-    workers_per_gpu=2,
+    imgs_per_gpu=4,
+    workers_per_gpu=0,
     train=dict(
         type=dataset_type,
         ann_file=data_root + 'trainval_split/trainval.json',
         img_prefix=data_root + 'trainval_split/images/',
         pipeline=train_pipeline),
-    val=dict(
+    # val=dict(
+    #     type=dataset_type,
+    #     ann_file=data_root + 'trainval_split/trainval.json',
+    #     img_prefix=data_root + 'trainval_split/images/',
+    #     pipeline=test_pipeline),
+    test=dict(
         type=dataset_type,
         ann_file=data_root + 'trainval_split/trainval.json',
         img_prefix=data_root + 'trainval_split/images/',
-        pipeline=test_pipeline),
-    test=dict(
-        type=dataset_type,
-        ann_file=data_root + 'test_split/test.json',
-        img_prefix=data_root + 'test_split/images/',
-        pipeline=test_pipeline))
+        pipeline=test_pipeline)
+    )
 # optimizer
 optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
 optimizer_config = dict(grad_clip=dict(max_norm=35, norm_type=2))
@@ -138,23 +140,24 @@ lr_config = dict(
     warmup='linear',
     warmup_iters=500,
     warmup_ratio=1.0 / 3,
-    step=[8, 11])
-checkpoint_config = dict(interval=1)
+    step=[4000, 8000])
+checkpoint_config = dict(interval=1000)
 # yapf:disable
 log_config = dict(
-    interval=50,
+    interval=1,
     hooks=[
         dict(type='TextLoggerHook'),
         # dict(type='TensorboardLoggerHook')
     ])
 # yapf:enable
 # runtime settings
-total_epochs = 12
+total_epochs = 10000
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
 work_dir = 'work_dirs/s2anet_r50_fpn_1x_ms_rotate/'
 load_from = None
-resume_from = None
+resume_from = 'work_dirs/s2anet_r50_fpn_1x_ms_rotate/latest.pth'
+# resume_from = None
 workflow = [('train', 1)]
 # r50
 # map: 0.7897890609404231

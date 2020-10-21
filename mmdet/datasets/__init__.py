@@ -10,6 +10,8 @@ from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
 
 from .dota_obb import DotaOBBDataset
+from .dota_obb_nncrystal import DotaOBBNNCrystalDataset
+
 from .hrsc2016 import HRSC2016Dataset
 
 __all__ = [

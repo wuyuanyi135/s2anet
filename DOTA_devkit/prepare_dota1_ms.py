@@ -13,7 +13,7 @@ def mkdir_if_not_exists(path):
         os.mkdir(path)
 
 
-def prepare_multi_scale_data(src_path, dst_path, gap=200, subsize=1024, scales=[0.5, 1.0, 1.5], num_process=32):
+def prepare_multi_scale_data(src_path, dst_path, gap=200, subsize=1024, scales=[0.5, 1.0, 1.5], num_process=1):
     """Prepare DOTA split data and labels
     Args:
     src_path: dataset path
@@ -37,19 +37,19 @@ def prepare_multi_scale_data(src_path, dst_path, gap=200, subsize=1024, scales=[
     # split train data
     print('split train data')
     split_train = splitbase_trainval(osp.join(src_path, 'train'), dst_train_path,
-                                     gap=gap, subsize=subsize, num_process=num_process)
+                                     gap=gap, subsize=subsize, num_process=num_process, ext=".jpg")
     for scale in scales:
         split_train.splitdata(scale)
     print('split val data')
     # split val data
     split_val = splitbase_trainval(osp.join(src_path, 'val'), dst_val_path,
-                                   gap=gap, subsize=subsize, num_process=num_process)
+                                   gap=gap, subsize=subsize, num_process=num_process, ext=".jpg")
     for scale in scales:
         split_val.splitdata(scale)
     # split test data
     print('split test data')
     split_test = splitbase_test(osp.join(src_path, 'test/images'), dst_test_path,
-                                gap=gap, subsize=subsize, num_process=num_process)
+                                gap=gap, subsize=subsize, num_process=num_process, ext=".jpg")
     for scale in scales:
         split_test.splitdata(scale)
 
@@ -68,20 +68,20 @@ def prepare_multi_scale_data(src_path, dst_path, gap=200, subsize=1024, scales=[
         dst_trainval_path, 'trainval.json'))
     generate_json_labels(dst_test_base_path, osp.join(
         dst_test_base_path, 'test.json'), trainval=False)
-    print('generate labels with coco format')
-    DOTA2COCOTrain(dst_trainval_path,
-                   osp.join(dst_trainval_path, 'trainval_coco.json'),
-                   wordname_15)
-    DOTA2COCOTest(dst_test_base_path,
-                  osp.join(dst_test_base_path, 'test_coco.json'),
-                  wordname_15)
+    # print('generate labels with coco format')
+    # DOTA2COCOTrain(dst_trainval_path,
+    #                osp.join(dst_trainval_path, 'trainval_coco.json'),
+    #                wordname_15)
+    # DOTA2COCOTest(dst_test_base_path,
+    #               osp.join(dst_test_base_path, 'test_coco.json'),
+    #               wordname_15)
 
 
 if __name__ == '__main__':
     # single scale
-    prepare_multi_scale_data('/project/jmhan/data/dota',
-                             '/workfs/jmhan/dota_1024_s2anet',scales=[1.0])
+    prepare_multi_scale_data('/home/wuyuanyi/nn/datasets/dota',
+                             '/home/wuyuanyi/nn/datasets/dota_split',scales=[1.0])
     # multi scale
-    # prepare_multi_scale_data('/project/jmhan/data/dota',
-    #                          '/workfs/jmhan/dota_1024_ms_s2anet',scales=[0.5, 1.0, 1.5], gap=500)
+    # prepare_multi_scale_data('/home/wuyuanyi/nn/datasets/dota',
+    #                          '/home/wuyuanyi/nn/datasets/dota_split',scales=[0.5, 1.0, 1.5], gap=500)
     print('done')
