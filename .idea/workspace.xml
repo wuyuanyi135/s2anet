@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3128b56b-fef0-472a-9b54-f741f93682f9" name="Default Changelist" comment="Add idea">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOTA_devkit/polyiou.py" beforeDir="false" afterPath="$PROJECT_DIR$/DOTA_devkit/polyiou.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOTA_devkit/polyiou_wrap.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/DOTA_devkit/polyiou_wrap.cxx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e032918f-3479-4afc-9c1b-6a1f192882de">
+    <option name="files">
+      <option value="notebooks/visualize.ipynb" />
+    </option>
+  </component>
+  <component name="ProjectId" id="1j6yWN31O3cK3Xdyd96pljcWzjz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mmdet/datasets" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mmdet/datasets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <list>
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.upload_to_server original image" />
+      <item itemvalue="Python.upload_to_server cropped" />
+      <item itemvalue="Python.inference_server" />
+      <item itemvalue="Python.prepare_dota1_ms" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.prepare_dota1_ms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3128b56b-fef0-472a-9b54-f741f93682f9" name="Default Changelist" comment="" />
+      <created>1603138867519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603138867519</updated>
+      <workItem from="1603138869004" duration="1566000" />
+      <workItem from="1603141997972" duration="34483000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update config for nncrystal">
+      <created>1603245064589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603245064589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Inference and deployment tools">
+      <created>1603245081966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603245081966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update config for nncrystal" />
+    <MESSAGE value="Inference and deployment tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inference and deployment tools" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="546" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603245147720">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="546" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603245147720" />
+    <state x="801" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1603229183301">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1603229183301" />
+    <state x="148" y="569" width="1717" height="511" key="#xdebugger.evaluate" timestamp="1603243605317">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="148" y="569" width="1717" height="511" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1603243605317" />
+    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2" timestamp="1603245124406">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1603245124406" />
+    <state width="1619" height="506" key="DebuggerActiveHint" timestamp="1603231299552">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1619" height="506" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1603231299552" />
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1603245110000">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603245110000" />
+    <state width="1807" height="260" key="GridCell.Tab.0.bottom" timestamp="1603244878315">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="260" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1603244878315" />
+    <state width="1807" height="260" key="GridCell.Tab.0.center" timestamp="1603244878313">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="260" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1603244878313" />
+    <state width="1807" height="260" key="GridCell.Tab.0.left" timestamp="1603244878312">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="260" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1603244878312" />
+    <state width="1807" height="260" key="GridCell.Tab.0.right" timestamp="1603244878314">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="260" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1603244878314" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1603244862164">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1603244862164" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1603244862164">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1603244862164" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1603244862164">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1603244862164" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1603244862164">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1603244862164" />
+    <state x="482" y="188" key="SettingsEditor" timestamp="1603138887492">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1603138887492" />
+    <state width="926" height="527" key="XDebugger.FullValuePopup" timestamp="1603232001152">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="926" height="527" key="XDebugger.FullValuePopup/67.27.1853.1053@67.27.1853.1053" timestamp="1603232001152" />
+    <state x="519" y="264" width="939" height="576" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603229375538">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="519" y="264" width="939" height="576" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053@67.27.1853.1053" timestamp="1603229375538" />
+    <state x="683" y="161" width="620" height="783" key="find.popup" timestamp="1603231033942">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="683" y="161" width="620" height="783" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1603231033942" />
+    <state x="656" y="272" width="672" height="678" key="search.everywhere.popup" timestamp="1603244979939">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="272" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1603244979939" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DOTA_devkit/prepare_dota1_ms.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="python-line">
+          <url>file://$PROJECT_DIR$/mmdet/models/detectors/s2anet.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/test.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/test.py</url>
+          <line>189</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-defaults>
+        <breakpoint type="python-line" />
+      </breakpoints-defaults>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/s2anet$upload_to_server.coverage" NAME="upload_to_server original image Coverage Results" MODIFIED="1603244874732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/s2anet$test.coverage" NAME="test Coverage Results" MODIFIED="1603232260887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/s2anet$prepare_dota1_ms.coverage" NAME="prepare_dota1_ms Coverage Results" MODIFIED="1603144117488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DOTA_devkit" />
+    <SUITE FILE_PATH="coverage/s2anet$upload_to_server_cropped.coverage" NAME="upload_to_server cropped Coverage Results" MODIFIED="1603232249324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/s2anet$inference_server.coverage" NAME="inference_server Coverage Results" MODIFIED="1603244799821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/s2anet$train.coverage" NAME="train Coverage Results" MODIFIED="1603166460200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
