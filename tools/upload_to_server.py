@@ -11,7 +11,9 @@ async def main(args):
         for image in args.images:
             data.add_field(os.path.basename(image), open(image, "rb"))
 
-        await session.post("http://localhost:9987/inference", data=data)
+        results = await session.post("http://localhost:9292/inference", data=data)
+        json = await results.json()
+        print(json)
 
 
 if __name__ == '__main__':

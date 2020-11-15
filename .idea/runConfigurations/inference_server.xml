@@ -13,7 +13,7 @@
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/inference_server.py" />
-    <option name="PARAMETERS" value="configs/dota/s2anet_r50_fpn_1x_ms_rotate_nncrystal.py work_dirs/s2anet_r50_fpn_1x_ms_rotate/latest.pth" />
+    <option name="PARAMETERS" value="configs/dota/s2anet_r50_fpn_1x_ms_rotate_nncrystal.py $PROJECT_DIR$/../datasets/s2a/b8/workdir/latest.pth" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />

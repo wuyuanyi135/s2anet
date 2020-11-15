@@ -19,6 +19,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
+
 class MemoryDataset(Dataset):
     def __init__(self, data):
         self.data = data
@@ -47,7 +48,8 @@ def main(args):
         wrap_fp16_model(model)
     checkpoint = load_checkpoint(model, args.checkpoint, map_location='cpu')
 
-    model.CLASSES = checkpoint['meta']['CLASSES']
+    classes_ = checkpoint['meta']['CLASSES']
+    model.CLASSES = classes_
     model = MMDataParallel(model, device_ids=[0])
     model.eval()
 
@@ -95,10 +97,23 @@ def main(args):
                 results.append(model(return_loss=False, rescale=True, **data))
         t_inference = time()
 
-        ret = {}
-        for fn, r in zip(filenames, results):
-            ret[fn] = {i: {"rbbox": boxes[:, :-1].tolist(), "scores": boxes[:, -1].tolist()} for i, boxes in
-                       enumerate(r)}
+        ret = {"results": {}}
+        for i_file, (fn, categories) in enumerate(zip(filenames, results)):
+            # initialize lists for caching different categories.
+            rbbox = []
+            scores = []
+            cats = []
+            for i, boxes in enumerate(categories):
+                nbox = len(boxes[:, :-1].tolist())
+                rbbox.extend(boxes[:, :-1].tolist())
+                scores.extend(boxes[:, -1].tolist())
+                cats.extend([i] * nbox)
+            ret["results"][fn] = {
+                "rbbox": rbbox,
+                "scores":scores,
+                "categories": cats,
+                "shape": shapes[i_file]
+            }
         t_final = time()
 
         ret["__time"] = __time = {
@@ -107,6 +122,8 @@ def main(args):
             "inference": t_inference - t_data,
             "total": t_final - t_begin,
         }
+
+        ret["__classes"] = classes_
 
         out = f"Processed {len(filenames)} files: ["
         for shape in shapes:
@@ -126,7 +143,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--host", default="0.0.0.0")
-    parser.add_argument("--port", default=9987)
+    parser.add_argument("--port", default=9292)
     parser.add_argument("config", help="path to config")
     parser.add_argument("checkpoint", help="path to checkpoint")
     args = parser.parse_args()
